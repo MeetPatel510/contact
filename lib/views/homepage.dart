@@ -1,5 +1,6 @@
 
 import 'package:contact/model/contact.dart';
+import 'package:contact/views/Home.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -20,20 +21,27 @@ class _homepageState extends State<homepage> {
         backgroundColor: Colors.cyanAccent,
         title: Text(""),
         centerTitle: true,
+
         actions: [
           Row(
             children: [
+
               Padding(
                 padding: EdgeInsets.all(18.0),
                 child: Icon(Icons.edit),
               ),
               Padding(
                 padding: const EdgeInsets.all(18.0),
-                child: Icon(Icons.star),
+                child: InkWell(
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                    child: Icon(Icons.done)),
               )
             ],
           )
         ],
+
       ),
       body: Column(
         children: [

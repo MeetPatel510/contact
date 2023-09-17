@@ -22,7 +22,7 @@ void main() async {
     ],
     builder: (context, _) => MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(backgroundColor: Colors.blueGrey,scaffoldBackgroundColor: Colors.blueGrey),
+      theme: ThemeData(backgroundColor: Colors.blueGrey),
       themeMode: ThemeMode.system,
       initialRoute: (isvisited) ? 'home' : 'add_contact',
       routes: {
