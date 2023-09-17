@@ -1,0 +1,16 @@
+
+import 'package:contact/model/counter.dart';
+import 'package:flutter/material.dart';
+
+class Counterprovider extends ChangeNotifier{
+  Countermodel count = Countermodel(Count: 0);
+
+  void Increment(){
+    count.Count++;
+    notifyListeners();
+  }
+  void decrement(){
+    count.Count--;
+    notifyListeners();
+  }
+}
